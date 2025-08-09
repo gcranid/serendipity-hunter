@@ -1,0 +1,19 @@
+/**
+ * 
+ * assets/css/fonts.css
+ * 
+ */
+
+/* alien-encounters */
+@font-face {
+	font-family: "Alien Encounters";
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: 100%;
+	src: url("../fonts/alien-encounters.ttf") format("truetype");
+	font-display: auto;
+}
+
+.alien-encounters {
+	font-family: "Alien Encounters";
+}

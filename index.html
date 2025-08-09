@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf--8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Serendipity Hunter" />
+    <title>Serendipity Hunter</title>
+    <link rel="icon" href="assets/img/icon.svg" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+
+  <body class="bg-gray-700 min-h-screen">
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-zinc-950 p-4 rounded-b-2xl shadow-xl flex justify-between items-center"
+    >
+      <a href="/" class="decoration-none ml-5"
+        ><img src="assets/img/icon.svg" alt="icon" class="w-12 h-12"
+      /></a>
+    </nav>
+
+    <main class="flex items-center justify-center h-screen">
+      <div
+        class="bg-zinc-950 rounded-2xl border border-zinc-600 shadow-2xl p-6 w-2/3"
+      >
+        <h1 class="text-xl text-center text-gray-400 alien-encounters">
+          Serendipity Hunter
+        </h1>
+
+        <div id="input-section" class="mb-5 mt-4">
+          <label
+            for="provider-url"
+            class="block mb-2 text-md font-medium text-gray-400 text-center"
+            >Enter Provider URL</label
+          >
+          <input
+            title="Enter your provider url..."
+            type="text"
+            id="provider-url"
+            class="block mx-auto w-3/4 bg-gray-950 border border-zinc-700 text-gray-300 text-md rounded-lg px-5 p-2.5"
+            placeholder="https://ethereum-rpc.publicnode.com"
+            required
+          />
+        </div>
+
+        <div
+          id="output-section"
+          class="hidden text-gray-400 text-sm my-4 p-4 bg-gray-900 rounded-lg border border-zinc-700 font-mono break-all"
+        >
+          <p id="output-status" class="mb-4">Status: Waiting to start...</p>
+          <p id="output-mnemonic" class="mb-4 mt-4">Mnemonic: ...</p>
+          <p id="output-address" class="mb-4 mt-4">Address: ...</p>
+          <p id="output-balance" class="mb-4 mt-4 text-green-500 font-bold">
+            Balance: ...
+          </p>
+          <p id="output-private-key" class="mb-4 mt-4">Private Key: ...</p>
+          <p id="found-counter" class="mb-4 mt-4 text-green-400 font-bold">
+            Wallets Found: 0
+          </p>
+        </div>
+
+        <div class="flex justify-center space-x-4">
+          <button
+            id="start-button"
+            title="click start to mine accounts."
+            type="button"
+            class="block max-w-sm text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-800 font-medium rounded-lg text-lg px-8 py-2.5 text-center"
+          >
+            Start
+          </button>
+          <button
+            id="stop-button"
+            title="click stop to end mining."
+            type="button"
+            class="hidden max-w-sm text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-800 font-medium rounded-lg text-lg px-8 py-2.5 text-center"
+          >
+            Stop
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="assets/js/index.js"></script>
+  </body>
+</html>

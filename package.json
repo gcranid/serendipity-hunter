@@ -1,0 +1,38 @@
+{
+  "name": "serendipity-hunter",
+  "version": "4.4.4",
+  "description": "Serendipity Hunter",
+  "homepage": ".",
+  "source": "index.html",
+  "scripts": {
+    "build": "yarn clean && parcel build .",
+    "dev": "yarn clean && parcel .",
+    "clean": "rm -rf dist .parcel-cache",
+    "lint": "prettier -w .",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "gcranid",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "autoprefixer": "^10.4.21",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.15.4",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "stream-browserify": "^3.0.0",
+    "tailwindcss": "^3.4.17",
+    "vm-browserify": "^1.1.2"
+  },
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "buffer": "^6.0.3",
+    "hdkey": "^2.1.0",
+    "web3": "1.10.4"
+  }
+}
