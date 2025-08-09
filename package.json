@@ -2,15 +2,14 @@
   "name": "serendipity-hunter",
   "version": "4.4.4",
   "description": "Serendipity Hunter",
-  "homepage": ".",
+  "homepage": "https://gcranid.github.io/serendipity-hunter",
   "source": "index.html",
   "scripts": {
-    "build": "yarn clean && parcel build .",
-    "dev": "yarn clean && parcel .",
+    "build": "parcel build",
+    "dev": "parcel",
     "clean": "rm -rf dist .parcel-cache",
-    "lint": "prettier -w .",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "gcranid",
