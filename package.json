@@ -2,6 +2,9 @@
   "name": "serendipity-hunter",
   "version": "4.4.4",
   "description": "Serendipity Hunter",
+  "author": "gcranid",
+  "license": "MIT",
+  "type": "module",
   "homepage": "https://gcranid.github.io/serendipity-hunter",
   "source": "index.html",
   "scripts": {
@@ -11,10 +14,6 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "gcranid",
-  "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "assert": "^2.1.0",
     "autoprefixer": "^10.4.21",
@@ -33,5 +32,6 @@
     "buffer": "^6.0.3",
     "hdkey": "^2.1.0",
     "web3": "1.10.4"
-  }
+  },
+  "keywords": []
 }
